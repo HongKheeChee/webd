@@ -4,7 +4,7 @@
 
 
 <a href="Blue Ocean Strategy.pdf"
-                          class="btn btn-success">Open</a>
+                          class="btn btn-success">Oppen</a>
 
 
 </body>
