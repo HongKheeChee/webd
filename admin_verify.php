@@ -11,7 +11,7 @@
 	$pass = trim($_POST['pass']);
 
 	if($name == "" || $pass == ""){
-		echo "Name or Pass is empty!";
+		echo "Name or Password is empty!";
 		exit;
 	}
 
@@ -29,7 +29,7 @@
 	$row = mysqli_fetch_assoc($result);
 
 	if($name != $row['name'] && $pass != $row['pass']){
-		echo "Name or pass is wrong. Check again!";
+		echo "Name or password is wrong. Check again!";
 		$_SESSION['admin'] = false;
 		exit;
 	}

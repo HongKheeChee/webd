@@ -43,13 +43,13 @@ div.c {
         <!--/.navbar-collapse -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-              <li><div class=""><a style="font-size:20px;" href="publisher_list.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Main Page</a></div></li>
+              <li><div class=""><a style="color:white;font-size:20px;" href="index.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Main Page</a></div></li>
               <!-- link to publiser_list.php -->
-              <li><div class=""><a style="font-size:20px;"href="publisher_list.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Publisher</a></div></li>
+              <li><div class=""><a style="color:white;font-size:20px;"href="publisher_list.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Publisher</a></div></li>
               <!-- link to books.php -->
-              <li><div class=""><a style="font-size:20px;" href="books.php"><span class="glyphicon glyphicon-book"></span>&nbsp; Books</a></div></li>
+              <li><div class=""><a style="color:white;font-size:20px;" href="books.php"><span class="glyphicon glyphicon-book"></span>&nbsp; Books</a></div></li>
               <!-- link to contacts.php -->
-              <li><div class=""><a style="font-size:20px;"href="contact.php"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp; Contact</a></div></li>
+              <li><div class=""><a style="color:white;font-size:20px;"href="contact.php"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp; Feedback</a></div></li>
               <!-- link to shopping cart -->
               <li><div class=""><a style="color:white; font-size:20px;"href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; My Cart</a></div></li>
               
