@@ -1,4 +1,9 @@
 <?php
+	
+	require_once "./template/header.php";
+	
+?>
+<?php
 	session_start();
 	if(!isset($_POST['submit'])){
 		echo "Something wrong! Check again!";

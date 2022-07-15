@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <?php
+	$title = "Administration section";
+	require_once "./template/header.php";
+?>
 <body>
 
+    <style>
+a {text-align: center;}
+</style>
 
 <a href="Blue Ocean Strategy.pdf"
-                          class="btn btn-success">Oppen</a>
+                          class="btn btn-success">Oppen </a>
 
 
 </body>

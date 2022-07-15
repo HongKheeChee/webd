@@ -14,7 +14,7 @@ div.c {
   font-size: 200%;
 }
 </style>
-<div class="c">This is some text.</div>
+<div class="c"></div>
         	<div class="c">
             	<a href="#" target="_blank"> Bookstore </a>
         	</div>
@@ -32,7 +32,7 @@ div.c {
 <body>
 
 <div class="container mt-2 ">
-  <h2>Example of Jumbotron</h2>
+  <h2></h2>
   <div class="mt-4 p-5 bg-primary text-white rounded">
     <h1></h1> 
     <p></p> 

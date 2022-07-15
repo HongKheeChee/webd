@@ -69,7 +69,7 @@ body {
 </head>
 <body>
 
-<h1>Card Flip with Text</h1>
+<h1></h1>
 <h3>Hover over the image below:</h3>
 
 <div class="flip-card">
@@ -78,9 +78,7 @@ body {
       <img src="untitled.jpg" alt="Avatar" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <h1>John Doe</h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
+        <img src="untitled2.jpg" alt="Avatar" style="width:300px;height:300px;">
     </div>
   </div>
 </div>

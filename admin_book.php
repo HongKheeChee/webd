@@ -8,6 +8,7 @@
 	$result = getAll($conn);
 ?>
 	<p class="lead"><a href="admin_add.php">Add new book</a></p>
+        <p class="lead"><a href="orders.php">Check orders</a></p>
 	<a href="admin_signout.php" class="btn btn-primary">Sign out!</a>
 	<table class="table" style="margin-top: 20px">
 		<tr>

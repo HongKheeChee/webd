@@ -13,7 +13,7 @@
 	require_once "./functions/database_functions.php";
 	require_once "./functions/cart_functions.php";
 
-	// book_isbn got from form post method, change this place later.
+	// 
 	if(isset($_POST['bookisbn'])){
 		$book_isbn = $_POST['bookisbn'];
 	}
@@ -21,7 +21,7 @@
 	if(isset($book_isbn)){
 		// new iem selected
 		if(!isset($_SESSION['cart'])){
-			// $_SESSION['cart'] is associative array that bookisbn => qty
+			// 
 			$_SESSION['cart'] = array();
 
 			$_SESSION['total_items'] = 0;
@@ -36,7 +36,7 @@
 		}
 	}
 
-	// if save change button is clicked , change the qty of each bookisbn
+	// 
 	if(isset($_POST['save_change'])){
 		foreach($_SESSION['cart'] as $isbn =>$qty){
 			if($_POST[$isbn] == '0'){

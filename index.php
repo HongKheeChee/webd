@@ -40,13 +40,13 @@
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="cover2.jpg" alt="Los Angeles" class="d-block" style="width:30%">
+      <img src="cover2.jpg" alt="Los Angeles" class="d-block" style="width:40%">
     </div>
     <div class="carousel-item">
-      <img src="bookcover.jpg" alt="Chicago" class="d-block" style="width:30%">
+      <img src="bookcover.jpg" alt="Chicago" class="d-block" style="width:40%">
     </div>
     <div class="carousel-item">
-      <img src="cover3.jpg" alt="New York" class="d-block" style="width:30%">
+      <img src="cover3.jpg" alt="New York" class="d-block" style="width:40%">
     </div>
   </div>
   
@@ -60,7 +60,7 @@
 </div>
 
 <div class="container-fluid mt-3">
-  <h3>Carousel Example</h3>
+  <h3></h3>
   <p>The following example shows how to create a basic carousel with indicators and controls.</p>
 </div>
 
@@ -89,18 +89,7 @@ body {
 }
 </style>
 
-<!DOCTYPE html>
-<html>
-<body>
 
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-
-</body>
-</html>
 
 <html>
 <head>
@@ -111,10 +100,10 @@ body {
 <body>
 
 <div class="container mt-3">
-  <h2>Example of Jumbotron</h2>
+  <h2></h2>
   <div class="mt-3 p-3 bg-primary text-white rounded">
-    <h1>Jumbotron Example</h1> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p> 
+    <h1></h1> 
+    <p></p> 
   </div>
 </div>
 
