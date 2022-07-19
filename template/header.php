@@ -53,7 +53,7 @@ div.c {
               <!-- link to shopping cart -->
               <li><div class=""><a style="color:white; font-size:15px;"href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; My Cart</a></div></li>
               
-              <li><div class=""><a style="color:white; font-size:15px;"href="newEmptyPHP.php"><span class=""></span>&nbsp; Register</a></div></li>
+              <li><div class=""><a style="color:white; font-size:15px;"href="Search.php"><span class=""></span>&nbsp; Search</a></div></li>
               
               <li><div class=""><a style="color:white; font-size:15px;"href="onlineread.php"><span class=""></span>&nbsp; Online reading</a></div></li>
             </ul>

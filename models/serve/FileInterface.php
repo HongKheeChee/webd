@@ -1,6 +1,6 @@
 <?php
 /**
- * this bage  coded  by Ahmed  Embaby in  24  SEP  2019
+ 
  */
 spl_autoload_register(function ($class){
     $arr=['goods','interfaces','orders','reviews','serve','customer'];
