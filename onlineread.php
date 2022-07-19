@@ -11,7 +11,7 @@ a {text-align: center;}
 </style>
 
 <a href="Blue Ocean Strategy.pdf"
-                          class="btn btn-success">Open </a>
+                          class="btn btn-success">Oppen </a>
 
 
 </body>
@@ -59,7 +59,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "session EXPIRED,please purchase book for full version";
+    document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>

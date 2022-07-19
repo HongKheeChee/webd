@@ -79,7 +79,7 @@
 		</div>
 		<div class="form-group">
 			<input type="submit" name="submit" value="Purchase" class="btn btn-primary">
-                        
+                        <a href="books.php" class="btn btn-primary">paypal</a>
 		</div>
 	</form>
 	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>

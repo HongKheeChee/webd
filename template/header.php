@@ -36,14 +36,14 @@ div.c {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <div class="c"><a style="color:white; font-size:20px;" class="navbar-right" href="index.php">Main Page</a></div>
+            <div class="c"><a style="color:white; font-size:20px;" class="navbar-brand" href="admin.php">Admin Login</a></div>
             
         </div>
 
         <!--/.navbar-collapse -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-              <li><div class=""><a style="color:white;font-size:15px;" href="admin.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Admin Login</a></div></li>
+              <li><div class=""><a style="color:white;font-size:15px;" href="index.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Main Page</a></div></li>
               <!-- link to publiser_list.php -->
               <li><div class=""><a style="color:white;font-size:15px;"href="publisher_list.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Publisher</a></div></li>
               <!-- link to books.php -->
@@ -53,7 +53,7 @@ div.c {
               <!-- link to shopping cart -->
               <li><div class=""><a style="color:white; font-size:15px;"href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; My Cart</a></div></li>
               
-              <li><div class=""><a style="color:white; font-size:15px;"href="search.php"><span class=""></span>&nbsp; Search</a></div></li>
+              <li><div class=""><a style="color:white; font-size:15px;"href="newEmptyPHP.php"><span class=""></span>&nbsp; Register</a></div></li>
               
               <li><div class=""><a style="color:white; font-size:15px;"href="onlineread.php"><span class=""></span>&nbsp; Online reading</a></div></li>
             </ul>

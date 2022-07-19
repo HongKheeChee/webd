@@ -16,7 +16,7 @@ div.c {
 </style>
 <div class="c"></div>
         	<div class="c">
-            	<a href="index.php" target="_blank"> Bookstore </a>
+            	<a href="#" target="_blank"> Bookstore </a>
         	</div>
         	<div class="c">
           		<a href="admin.php">Admin Login</a> 2022
