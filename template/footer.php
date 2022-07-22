@@ -30,14 +30,21 @@ div.c {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="books.php">Books</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="search.php">Search</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.php">Feedback</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="admin.php">Admin Login</a>
+  </li>
+</ul>
 
-<div class="container mt-2 ">
-  <h2></h2>
-  <div class="mt-4 p-5 bg-primary text-white rounded">
-    <h1></h1> 
-    <p></p> 
-  </div>
-</div>
 
 </body>
 </html>

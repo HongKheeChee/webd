@@ -104,7 +104,7 @@ body {
 	?>
 		<li>
 			<span class="badge"><?php echo $count; ?></span>
-		    <a style="color:white;" href="bookPerPub.php?pubid=<?php echo $row['publisherid']; ?>"><?php echo $row['publisher_name']; ?></a>
+		    <a style=" font-size:20px; color:white;" href="bookPerPub.php?pubid=<?php echo $row['publisherid']; ?>"><?php echo $row['publisher_name']; ?></a>
 		</li>
 	<?php } ?>
 		<li>
