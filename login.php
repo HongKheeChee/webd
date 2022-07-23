@@ -1,53 +1,46 @@
-<?php // Script 9.6 - login.php #3
-/* This page lets people log into the site (almost!). */
-
-// Set the page title and include the header file:
-define('TITLE', 'Login');
-include('templates/header.html');
-
-// Print some introductory text:
-print '<h2>Login Form</h2>
-	<p>Users who are logged in can take advantage of certain features like this, that, and the other thing.</p>';
-
-// Check if the form has been submitted:
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-	// Handle the form:
-	if ( (!empty($_POST['email'])) && (!empty($_POST['password'])) ) {
-	
-		if ( (strtolower($_POST['email']) == 'me@example.com') && ($_POST['password'] == 'testpass') ) { // Correct!
-	
-			// Do session stuff:
-			session_start();
-			$_SESSION['email'] = $_POST['email'];
-			$_SESSION['loggedin'] = time();
-			
-			// Redirect the user to the welcome page!
-			ob_end_clean(); // Destroy the buffer!
-			header ('Location: welcome.php');
-			exit();
-		
-		} else { // Incorrect!
-	
-			print '<p class="text--error">The submitted email address and password do not match those on file!<br>Go back and try again.</p>';
-		
-		}
-	
-	} else { // Forgot a field.
-	
-		print '<p class="text--error">Please make sure you enter both an email address and a password!<br>Go back and try again.</p>';
-		
-	}
-
-} else { // Display the form.
-
-	print '<form action="login.php" method="post" class="form--inline">
-	<p><label for="email">Email Address:</label><input type="email" name="email" size="20"></p>
-	<p><label for="password">Password:</label><input type="password" name="password" size="20"></p>
-	<p><input type="submit" name="submit" value="Log In!" class="button--pill"></p>
-	</form>';
-
-}
-
-include('templates/footer.html'); // Need the footer.
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<?php
+    require('db.php');
+    session_start();
+    // When form submitted, check and create user session.
+    if (isset($_POST['username'])) {
+        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = mysqli_real_escape_string($con, $username);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($con, $password);
+        // Check user is exist in the database
+        $query    = "SELECT * FROM `users` WHERE username='$username'
+                     AND password='" . md5($password) . "'";
+        $result = mysqli_query($con, $query) or die(mysql_error());
+        $rows = mysqli_num_rows($result);
+        if ($rows == 1) {
+            $_SESSION['username'] = $username;
+            // Redirect to user dashboard page
+            header("Location: dashboard.php");
+        } else {
+            echo "<div class='form'>
+                  <h3>Incorrect Username/password.</h3><br/>
+                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                  </div>";
+        }
+    } else {
 ?>
+    <form class="form" method="post" name="login">
+        <h1 class="login-title">Login</h1>
+        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
+        <input type="password" class="login-input" name="password" placeholder="Password"/>
+        <input type="submit" value="Login" name="submit" class="login-button"/>
+        <p class="link">Don't have an account? <a href="registration.php">Registration Now</a></p>
+  </form>
+<?php
+    }
+?>
+</body>
+</html>
